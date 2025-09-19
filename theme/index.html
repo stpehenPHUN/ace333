@@ -1,0 +1,93 @@
+﻿<body>
+    <div id='body-container'>
+        <div class='divHeader'>
+            <div class='header-wrapper'>
+                <div class='header-left'>
+                    [FUNC:readcontent]page=header-left;[/FUNC]
+                </div>
+                <div class='header-right'>
+                    [FUNC:readcontent]page=header-right;[/FUNC]
+                    <div class='header-rightbottom'>
+                        <div class='header-menu'>
+                            <div id='divMenu' class='collapse navbar-collapse' aria-hidden='true'>
+                                <div id='menuContainer'>
+                                    ".$theme['menu']."
+                                </div>
+                                [FUNC:readcontent]page=header-menu;[/FUNC]
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='divBody'>
+            ".$theme['body']."
+        </div>
+        <div id='divFooter' class='footer'>
+            [FUNC:readcontent]page=footer;[/FUNC]
+        </div>
+    </div>
+</body>
+<body>
+    <div id='body-container'>
+        <div class='divHeader'>
+            <div class='header-wrapper'>
+                <div class='header-left'>
+                    [FUNC:readcontent]page=header-top;[/FUNC]
+                </div>
+                <div class='header-center'>
+                    <div class='header-menu'>
+                        <div id='divMenu' class='modal modal-menu' tabindex='-1' role='dialog' aria-hidden='true'>
+                            <div id='menuContainer' class='modal-dialog'>
+                                [FUNC:readcontent]page=menu-top;[/FUNC]
+                                ".$theme['menu']."
+                                [FUNC:readcontent]page=menu-other;[/FUNC]
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class='header-right'>
+                    [FUNC:readcontent]page=header-top;[/FUNC]
+                </div>
+            </div>
+        </div>
+        <div id='divBody'>
+            ".$theme['body']."
+        </div>
+        <div id='divFooter' class='footer'>
+            [FUNC:readcontent]page=footer;[/FUNC]
+        </div>
+    </div>
+</body>
+
+<body>
+    <div id='body-container'>
+        <div class='divHeader'>
+            <div class='header-wrapper'>
+                <div class='header-left'>
+                    [FUNC:readcontent]page=header-left;[/FUNC]
+                </div>
+                <div class='header-center'>
+                    <div class='header-menu'>
+                        <div id='divMenu' class='collapse navbar-collapse' aria-hidden='true'>
+                            <div id='menuContainer'>
+                                ".$theme['menu']."
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='header-right'>
+                    [FUNC:readcontent]page=header-right;[/FUNC]
+                </div>
+            </div>
+        </div>
+        <div class='divBody'>
+            ".$theme['body']."
+        </div>
+        <div class='divFooter'>
+            [FUNC:readcontent]page=footer;[/FUNC]
+        </div>
+    </div>
+</body>

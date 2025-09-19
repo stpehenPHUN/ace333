@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../JS/common.js"></script>
+    <script src="../JS/jquery.lastest.min.js"></script>
+    <script src="../JS/jQuery.base64.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link href="../theme/js/swiper/css/swiper.min.css" rel="stylesheet" />
+    <script src="../theme/js/swiper/js/swiper.min.js"></script>
+    <link href="../JS/bootstrap-5.3.8-dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="../JS/bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+    <script src="../theme/js/gsap/gsap.min.js"></script>
+    <script src="../theme/js/gsap/ScrollTrigger.min.js"></script>
+    <script src="../theme/js/gsap/Draggable.min.js"></script>
+    <link href="../css/01-style.css?v1" rel="stylesheet" />
+    <script src="../JS/import.js"></script>
+    <script src="../JS/script.js" defer type="module"></script>
+</head>
+
+<body>
+    <div id="body-container">
+        <header class="divHeader" data-include="header.html" data-lang="en"></header>
+        <div class="divBody">
+            <div id="theme-contain-download">
+                <div class="d-lg-flex pt-lg-5 pb-lg-5 bg-deepblack">
+                    <div class="subBanner col-xxl-8 col-lg-9 order-lg-2" data-include="banner.html" data-lang="en">
+                    </div>
+                    <div class="title col-xxl-4 col-lg-3 d-lg-flex fdirection-column justify-content-lg-center align-items-lg-center order-lg-1">
+                        <div class="m-lg-0 m-4">
+                            <p>Home / Download</p>
+                            <h2>
+                                Android <br />IOS
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="w1440">
+                    <div class="d-lg-flex mydownload mt-5 mb-5">
+                        <div class="col-lg-4 order-lg-2">
+                            <div class="p-5 text-center text-lg-start">
+                                <img src="../image/flag-malaysia.png" class="img-icn mb-4" />
+                                <h3 class="fs-1">
+                                    Download Our <br />
+                                    ACE333 Game App
+                                </h3>
+                                <p class="mt-2 mb-4">Play all gamse in one app</p>
+                                <div class="d-flex justify-content-center justify-content-lg-start ">
+                                    <div class="mx-4 mx-lg-0">
+                                        <h3 class="countup" data-target="50" data-suffix="+"></h3>
+                                        <h4>Games</h4>
+                                    </div>
+                                    <div class="mx-4">
+                                        <h3 class="countup" data-target="48" data-suffix="+"></h3>
+                                        <h4>Bonus</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="download-boxes downloadlink" data-include="download-link.html" data-lang="en"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-center">Hit the jackpot now!</h2>
+                        <div>
+                            <div class="m-5">
+                                <div class="d-lg-flex align-items-center justify-content-center">
+                                    <div class="d-none d-lg-block col-lg-6 text-end">
+                                        <h3 class="text-plus500" id="jackpotmegaplus"></h3>
+                                        <h4 class="text-plus250">Mega Jackpot</h4>
+                                    </div>
+                                    <div class="jackpot-boxes trio-card col-lg-6">
+                                        <div class="jackpot-title">
+                                            <img src="../image/jackpot-mega.png" />
+                                        </div>
+                                        <div class="jackpot-box">
+                                            <div class="jackpot-a_s">
+                                                <img src="../image/jackpot-speaker.png" />
+                                            </div>
+                                            <div class="jackpot-count displaytable marginauto">
+                                                <span id="jackpotmega"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="m-5">
+                                <div class="d-lg-flex align-items-center justify-content-center">
+                                    <div class="jackpot-boxes trio-card col-lg-6">
+                                        <div class="jackpot-title">
+                                            <img src="../image/jackpot-ultimate.png" />
+                                        </div>
+                                        <div class="jackpot-box">
+                                            <div class="jackpot-a_s">
+                                                <img src="../image/jackpot-speaker.png" />
+                                            </div>
+                                            <div class="jackpot-count displaytable marginauto">
+                                                <span id="jackpotulti"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-none d-lg-block col-lg-6">
+                                        <h3 class="text-plus500" id="jackpotultiplus"></h3>
+                                        <h4 class="text-plus250">Ultimate Jackpot</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="m-5">
+                                <div class="d-lg-flex align-items-center justify-content-center">
+                                    <div class="d-none d-lg-block col-lg-6 text-end">
+                                        <h3 class="text-plus500" id="jackpotgrandplus"></h3>
+                                        <h4 class="text-plus250">Grand Jackpot</h4>
+                                    </div>
+                                    <div class="jackpot-boxes trio-card col-lg-6">
+                                        <div class="jackpot-title">
+                                            <img src="../image/jackpot-grand.png" />
+                                        </div>
+                                        <div class="jackpot-box">
+                                            <div class="jackpot-a_s">
+                                                <img src="../image/jackpot-speaker.png" />
+                                            </div>
+                                            <div class="jackpot-count displaytable marginauto">
+                                                <span id="jackpotgrand"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="../JS/jackpot.js"></script>
+            </div>
+        </div>
+        <div class="divFooter">
+            <div class="footer-container" data-include="footer.html" data-lang="en">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

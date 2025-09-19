@@ -1,0 +1,1305 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../JS/common.js"></script>
+    <script src="../JS/jquery.lastest.min.js"></script>
+    <script src="../JS/jQuery.base64.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link href="../theme/js/swiper/css/swiper.min.css" rel="stylesheet" />
+    <script src="../theme/js/swiper/js/swiper.min.js"></script>
+    <link href="../JS/bootstrap-5.3.8-dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="../JS/bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+    <script src="../theme/js/gsap/gsap.min.js"></script>
+    <script src="../theme/js/gsap/ScrollTrigger.min.js"></script>
+    <script src="../theme/js/gsap/Draggable.min.js"></script>
+    <link href="../css/01-style.css?v1" rel="stylesheet" />
+    <script src="../JS/import.js"></script>
+    <script src="../JS/script.js" defer type="module"></script>
+</head>
+
+<body>
+    <div id="body-container">
+        <header class="divHeader" data-include="header.html" data-lang="en"></header>
+        <div class="divBody">
+            <div id="theme-contain-games">
+                <div class="d-lg-flex pt-lg-5 pb-lg-5 bg-deepblack">
+                    <div class="subBanner col-xxl-8 col-lg-9 order-lg-2" data-include="banner.html" data-lang="en">
+                    </div>
+                    <div class="title col-xxl-4 col-lg-3 d-lg-flex fdirection-column justify-content-lg-center align-items-lg-center order-lg-1">
+                        <div class="m-lg-0 m-4">
+                            <p>Home / Products</p>
+                            <h2>
+                                Games
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w1440">
+                    <div id="gamelist" class="mb-5">
+                        <div id="tab-games" class="gl-tabgames d-lg-flex align-items-center justify-content-between p-3 p-md-3">
+                            <div class="gl-tabs">
+                                <p class="small mt-3 m-0">Game type:</p>
+                                <div class="gl-tab ">
+                                    <button class="btn-gl active" data-gl-target="all">
+                                        All
+                                    </button>
+                                    <button class="btn-gl" data-gl-target="slot">
+                                        Slot
+                                    </button>
+                                    <button class="btn-gl" data-gl-target="fishing">
+                                        Fishing
+                                    </button>
+                                    <button class="btn-gl" data-gl-target="slottable">
+                                        Table
+                                    </button>
+                                    <button class="btn-gl" data-gl-target="arcade">
+                                        Arcade
+                                    </button>
+                                    <button class="btn-gl" data-gl-target="p2p">
+                                        P2P
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="gl-search-wrapper" style="position:relative; display:inline-block;">
+                                <input type="text" id="gl-search" placeholder="Search..." />
+                                <span id="gl-clear" class="position-absolute">&times;</span>
+                            </div>
+                        </div>
+                        <div class="gl-box active" data-gl-box="all">
+                            <div class="gl-box-wrapper">
+
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/5 dragons deluxe.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">5 Dragons Deluxe</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/5dragons.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">5 Dragons</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slottable">
+                                    <img src="../image/games/5fortune.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">5 Fortune</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slottable">
+                                    <img src="../image/games/5koi.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">5 Koi</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slottable">
+                                    <img src="../image/games/5koideluxe.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">5 Koi Deluxe</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/50dragons.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">50 Dragons</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/88 fortune.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">88 Fortune</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/88rooster.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">88 Rooster</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/aladdin.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Aladdin</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/alice.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Alice</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/amazingthailand.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Amazing Thailand</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/ancientegypt.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Ancient Egypt</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/anightout.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">A Night Out</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/artictreasure.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Artic Treasure</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/aztectreasure.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Aztec Treasure</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/buffalo rush.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Buffalo Rush</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/hotchillies.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Hot Chillies</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/baozhuxuantian.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Bao Zhu Xuan Tian</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/bigprosperity.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Big Prosperity</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/bigshot.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Big Shot</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/blazing777.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Blazing777</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slottable">
+                                    <img src="../image/games/bonusbear.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Bonus Bear</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/bonusdigger.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Bonus Digger</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/boykingstreasure.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Boy Kings Treasure</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/buffalo.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Buffalo</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/captain america.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Captain America</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/captaintreasure.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Captain Treasure</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/cherrylove.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Cherry Love</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slottable">
+                                    <img src="../image/games/circus.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Circus</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/cleopatragold.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Cleopatra Gold</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/cookiepop.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Cookie Pop</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/coyotecash.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Coyote Cash</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all fishing">
+                                    <img src="../image/games/crystalwater.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Crystal Water</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/deserttreasure.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Desert Treasure</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/diamonds.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Diamonds</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all fishing">
+                                    <img src="../image/games/dolphin.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Dolphin</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div> <div class="gl-item all slot">
+                                    <img src="../image/games/dolphinreef.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Dolphin Reef</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/dragongold.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Dragon Gold</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/dragonmaiden.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Dragon Maiden</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/eastersuprise.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Easter Suprise</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/elektra.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Elektra</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/Emperor Gate.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Emperor Gate</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/fairygarden.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Fairy Garden</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/famenfortune.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Famen Fortune</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/fantastic4.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Fantastic 4</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/feicuigongzhu.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Fei Cui Gong Zhu</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/fongshen.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Fong Shen</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/football rules.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Football  Rules</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/footballcarnival.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Football Carnival</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/fortune lion.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Fortune Lion</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/fortune Panda.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Dortune Panda</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/fortunefox.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Fortune Fox</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/fruitytutti.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Fruity Tutti</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/geishastory.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Geisha Story</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/glamorousworld.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Glamorous World</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/godofwealth.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">God Of Wealth</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/goldenisland.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Golden Island</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/goldenlotus.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Golden Lotus</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/goldenslut.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Golden Slut</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/goldentour.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Golden Tour</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/goldentree.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Golden Tree</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/great blue.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Great Blue</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/greatchina.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Great China</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/greatstars.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Great Stars</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slottable">
+                                    <img src="../image/games/greenlight.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Green Light</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/halloween fortune.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Halloween Fortune</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/happylantern.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Happy Lantern</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/highstakes.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">High Stakes</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/highway kings.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Highway Kings</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/hockeyleague.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Hockey League</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/hotchillies.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Hot Chillies</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/huanlecaishen.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Huan Le Cai Shen</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/iceland.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Iceland</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/indianmyth.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Indian Myth</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/irishluck.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Irish Luck</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/ironman3.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Iron Man 3</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/japanfortune.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Japan Fortune</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all fishing">
+                                    <img src="../image/games/jinqianwa.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Jin Qian Wa</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slottable">
+                                    <img src="../image/games/joyful mahjong.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Joyful Mahjong</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/kimochii.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Kimochii</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/laura.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Laura</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/lotto Madness.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Lotto Madness</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all fishing">
+                                    <img src="../image/games/luckyfisherman.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Lucky Fisherman</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/madamedestiny.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Madame Destiny</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/magicalspin.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Magical Spin</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/magicpearl.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Magic Pearl</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/marilynmonroe.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Marilyn Monroe</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/masterchenfortune.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Master Chen Fortune</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all fishing">
+                                    <img src="../image/games/mermaidjewels.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Mermaid Jewels</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/moe.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Moe</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/mysticdragon.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Mystic Dragon</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/nana.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Nana</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/niannianyouyu.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Nian Nian You Yu</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/nightlife.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Night Life</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/nitro.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Nitro</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/niulangzhinu.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">NiuLangZhiNu</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/orientexpress.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Orientex Press</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/panjinlian.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">PanJinLian</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/panthermoon.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Panther Moon</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/penguinvacation.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Penguin Vacation</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/Pharaoh’s Temple.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Pharaoh’s Temple</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/pirateship.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Pirate Ship</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/puregold.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Pure Gold</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/rally.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Rally</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/ranchstory.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Ranch Story</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/rara.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Rara</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/rion.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Rion</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/Rome and Glory.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Rome and Glory</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/safari heat.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Safari Heat</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/saharagold.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Sahara Gold</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/santasuprise.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Santa Suprise</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/seacaptain.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Sea Captain</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/seasonsgreeting.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Seasons Greeting</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all fishing">
+                                    <img src="../image/games/seaworld.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Sea World</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/shiningstars.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Shining Stars</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/shuangxi.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">ShuangXi</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/Silent Samurai .jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Silent Samurai</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/silverbullet.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Silver Bullet</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/sixiang.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">SiXiang</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/sora.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Sora</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/sparta.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Sparta</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/spartan.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Spartan</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/steamtower.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Steam Tower</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/stoneage.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Stone Age</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/stripernight.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Striper Night</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/sun wukong.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Sun WuKong</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/talesofegypt.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Tales Of Egypt</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/tallyho.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Tally Ho</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/thaiparadise.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Thai Paradise</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/the incredibles hulk.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">The Incredibles Hulk</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/thediscovery.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">The Discovery</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/thegreatmingempire.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Th Ggreat Ming Empire</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/threekingdoms.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Three Kingdoms</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/topgun.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Top Gun</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/treasureisland.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Treasure Island</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/trex.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Trex</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/tripletwister.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Triple Twister</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/ultimatesuper-blue.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Ultimatesuper</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/ultimatesuper-red.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Ultimatesuper</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/victory.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Victory</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/wealthtreasure.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Wealth Treasure</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all arcade">
+                                    <img src="../image/games/westernranch.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Western Ranch</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/wildfox.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Wild Fox</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/wolfhunter.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Wolf Hunter</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/wongchoy.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">Wong Choy</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/xuanpilianhuan.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">XuanPiLianHuan</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/yingcaishen.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">YingCaiShen</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/zhao cai jin bao.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">ZhaoCaiJinBao</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gl-item all slot">
+                                    <img src="../image/games/zhaocaitongzi.jpg" />
+                                    <div class="gl-hover">
+                                        <div class="gl-detail">
+                                            <p class="gl-text">ZhaoCaiTongZi</p><button class="btn-play bg-gold btn">Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+                                <!--<div class="gl-item all CATEGORYNAME">
+        <img src="../image/games/IMAGEFILENAME.jpg" />
+        <div class="gl-hover">
+            <div class="gl-detail">
+                <p class="gl-text">GAMESNAME</p><button class="btn-play bg-gold btn">Play</button>
+            </div>
+        </div>
+    </div>-->
+
+
+
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <script src="../JS/script-games.js"></script>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="divFooter">
+            <div class="footer-container" data-include="footer.html" data-lang="en"></div>
+        </div>
+    </div>
+
+</body>
+</html>

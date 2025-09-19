@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../JS/common.js"></script>
+    <script src="../JS/jquery.lastest.min.js"></script>
+    <script src="../JS/jQuery.base64.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link href="../theme/js/swiper/css/swiper.min.css" rel="stylesheet" />
+    <script src="../theme/js/swiper/js/swiper.min.js"></script>
+    <link href="../JS/bootstrap-5.3.8-dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="../JS/bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+    <script src="../theme/js/gsap/gsap.min.js"></script>
+    <script src="../theme/js/gsap/ScrollTrigger.min.js"></script>
+    <script src="../theme/js/gsap/Draggable.min.js"></script>
+    <link href="../css/01-style.css?v1" rel="stylesheet" />
+    <script src="../JS/import.js"></script>
+    <script src="../JS/script.js" defer type="module"></script>
+</head>
+
+<body>
+    <div id="body-container">
+        <header class="divHeader" data-include="header.html" data-lang="en"></header>
+        <div class="divBody">
+            <div id="theme-contain-guide">
+                <div class="d-lg-flex pt-lg-5 pb-lg-5 bg-deepblack">
+                    <div class="subBanner col-xxl-8 col-lg-9 order-lg-2" data-include="banner.html" data-lang="en">
+                    </div>
+                    <div class="title col-xxl-4 col-lg-3 d-lg-flex fdirection-column justify-content-lg-center align-items-lg-center order-lg-1">
+                        <div class="m-lg-0 m-4">
+                            <p>Home / Guide</p>
+                            <h2>
+                                Guide
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="w1440">
+
+                    <div class="p-4">
+                        <div class="text-center">
+                            <h2>How it work?</h2>
+                            <p>Select IOS or Android playform you wish to play and step by step to install</p>
+                        </div>
+                        <div class="row d-flex justify-content-center align-items-center col-lg-3 marginauto">
+                            <button class="btn bg-gold border text-black w-auto flex-shrink-1 flex-grow-1" data-steps="ios">IOS</button>
+                            <button class="btn text-white border bg-deepblack w-auto flex-shrink-1 flex-grow-1" data-steps="android">Android</button>
+                        </div>
+                    </div>
+                    <div class="mt-4 mb-4">
+                        <div class="ios-cards cards position-relative" data-steps-target="ios" data-breakpoint="600">
+                            <button class="btn btn-ios-prev bg-gold prev btn-round mobileOnly">
+                                <img src="../image/arrow-left.png">
+                            </button>
+                            <div class="ios-track d-flex flex-lg-wrap">
+                                <div class="ios-card step-card col-lg-4 text-center p-lg-5 p-3">
+                                    <div class="img rounded-5 bgblack pd-5 ratio-1x1 ratio d-flex justify-content-center align-items-end mb-4">
+                                        <img src="../image/guide-ios-01.png" class="position-static" />
+                                    </div>
+                                    <div class="detail">
+                                        <h3>Step 1</h3>
+                                        <p>
+                                            Select Menu button
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="ios-card step-card col-lg-4 text-center p-lg-5 p-3">
+                                    <div class="img rounded-5 bgblack pd-5 ratio-1x1 ratio d-flex justify-content-center align-items-end mb-4">
+                                        <img src="../image/guide-ios-02.png" class="position-static" />
+                                    </div>
+                                    <div class="detail">
+                                        <h3>Step 2</h3>
+                                        <p>
+                                            Click the download button
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="ios-card step-card col-lg-4 text-center p-lg-5 p-3">
+                                    <div class="img rounded-5 bgblack pd-5 ratio-1x1 ratio d-flex justify-content-center align-items-end mb-4">
+                                        <img src="../image/guide-ios-03.png" class="position-static" />
+                                    </div>
+                                    <div class="detail">
+                                        <h3>Step 3</h3>
+                                        <p>
+                                            Select IOS Installation
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="ios-card step-card col-lg-4 text-center p-lg-5 p-3">
+                                    <div class="img rounded-5 bgblack pd-5 ratio-1x1 ratio d-flex justify-content-center align-items-end mb-4">
+                                        <img src="../image/guide-ios-04.png" class="position-static" />
+                                    </div>
+                                    <div class="detail">
+                                        <h3>Step 4</h3>
+                                        <p>
+                                            Click TestFlight and download
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="ios-card step-card col-lg-4 text-center p-lg-5 p-3">
+                                    <div class="img rounded-5 bgblack pd-5 ratio-1x1 ratio d-flex justify-content-center align-items-end mb-4">
+                                        <img src="../image/guide-ios-05.png" class="position-static" />
+                                    </div>
+                                    <div class="detail">
+                                        <h3>Step 5</h3>
+                                        <p>
+                                            Click Open
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="ios-card step-card col-lg-4 text-center p-lg-5 p-3">
+                                    <div class="img rounded-5 bgblack pd-5 ratio-1x1 ratio d-flex justify-content-center align-items-end mb-4">
+                                        <img src="../image/guide-ios-06.png" class="position-static" />
+                                    </div>
+                                    <div class="detail">
+                                        <h3>Step 6</h3>
+                                        <p>
+                                            Click ACE333.apk and download
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="ios-card step-card col-lg-4 text-center p-lg-5 p-3">
+                                    <div class="img rounded-5 bgblack pd-5 ratio-1x1 ratio d-flex justify-content-center align-items-end mb-4">
+                                        <img src="../image/guide-ios-07.png" class="position-static" />
+                                    </div>
+                                    <div class="detail">
+                                        <h3>Step 7</h3>
+                                        <p>
+                                            Click allow from this source
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="ios-card step-card col-lg-4 text-center p-lg-5 p-3">
+                                    <div class="img rounded-5 bgblack pd-5 ratio-1x1 ratio d-flex justify-content-center align-items-end mb-4">
+                                        <img src="../image/guide-ios-08.png" class="position-static" />
+                                    </div>
+                                    <div class="detail">
+                                        <h3>Step 8</h3>
+                                        <p>
+                                            Click accept and Install
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-ios-next bg-gold next btn-round mobileOnly">
+                                <img src="../image/arrow-right.png">
+                            </button>
+                        </div>
+                        <div class="android-cards cards position-relative" data-steps-target="android" data-breakpoint="600" style="display:none;">
+                            <button class="btn btn-android-prev bg-gold prev btn-round mobileOnly">
+                                <img src="../image/arrow-left.png">
+                            </button>
+                            <div class="android-track d-flex flex-lg-wrap">
+                                <div class="android-card step-card col-lg-4 text-center p-lg-5 p-3">
+                                    <div class="img rounded-5 bgblack pd-5 ratio-1x1 ratio d-flex justify-content-center align-items-end mb-4">
+                                        <img src="../image/guide-android-01.png" class="position-static" />
+                                    </div>
+                                    <div class="detail">
+                                        <h3>Step 1</h3>
+                                        <p>
+                                            Select Menu button
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="android-card step-card col-lg-4 text-center p-lg-5 p-3">
+                                    <div class="img rounded-5 bgblack pd-5 ratio-1x1 ratio d-flex justify-content-center align-items-end mb-4">
+                                        <img src="../image/guide-android-02.png" class="position-static" />
+                                    </div>
+                                    <div class="detail">
+                                        <h3>Step 2</h3>
+                                        <p>
+                                            Click the download button
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="android-card step-card col-lg-4 text-center p-lg-5 p-3">
+                                    <div class="img rounded-5 bgblack pd-5 ratio-1x1 ratio d-flex justify-content-center align-items-end mb-4">
+                                        <img src="../image/guide-android-03.png" class="position-static" />
+                                    </div>
+                                    <div class="detail">
+                                        <h3>Step 3</h3>
+                                        <p>
+                                            Select Android Installation
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="android-card step-card col-lg-4 text-center p-lg-5 p-3">
+                                    <div class="img rounded-5 bgblack pd-5 ratio-1x1 ratio d-flex justify-content-center align-items-end mb-4">
+                                        <img src="../image/guide-android-04.png" class="position-static" />
+                                    </div>
+                                    <div class="detail">
+                                        <h3>Step 4</h3>
+                                        <p>
+                                            Click download
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="android-card step-card col-lg-4 text-center p-lg-5 p-3">
+                                    <div class="img rounded-5 bgblack pd-5 ratio-1x1 ratio d-flex justify-content-center align-items-end mb-4">
+                                        <img src="../image/guide-android-05.png" class="position-static" />
+                                    </div>
+                                    <div class="detail">
+                                        <h3>Step 5</h3>
+                                        <p>
+                                            Click ACE333.apk
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="android-card step-card col-lg-4 text-center p-lg-5 p-3">
+                                    <div class="img rounded-5 bgblack pd-5 ratio-1x1 ratio d-flex justify-content-center align-items-end mb-4">
+                                        <img src="../image/guide-android-06.png" class="position-static" />
+                                    </div>
+                                    <div class="detail">
+                                        <h3>Step 6</h3>
+                                        <p>
+                                            Click settings
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="android-card step-card col-lg-4 text-center p-lg-5 p-3">
+                                    <div class="img rounded-5 bgblack pd-5 ratio-1x1 ratio d-flex justify-content-center align-items-end mb-4">
+                                        <img src="../image/guide-android-07.png" class="position-static" />
+                                    </div>
+                                    <div class="detail">
+                                        <h3>Step 7</h3>
+                                        <p>
+                                            Click allow from this source
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="android-card step-card col-lg-4 text-center p-lg-5 p-3">
+                                    <div class="img rounded-5 bgblack pd-5 ratio-1x1 ratio d-flex justify-content-center align-items-end mb-4">
+                                        <img src="../image/guide-android-08.png" class="position-static" />
+                                    </div>
+                                    <div class="detail">
+                                        <h3>Step 8</h3>
+                                        <p>
+                                            Click Install
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-android-next bg-gold next btn-round mobileOnly">
+                                <img src="../image/arrow-right.png">
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="../JS/script-guide.js"></script>
+        </div>
+        <div class="divFooter">
+            <div class="footer-container" data-include="footer.html" data-lang="en"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,815 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../JS/common.js"></script>
+    <script src="../JS/jquery.lastest.min.js"></script>
+    <script src="../JS/jQuery.base64.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link href="../theme/js/swiper/css/swiper.min.css" rel="stylesheet" />
+    <script src="../theme/js/swiper/js/swiper.min.js"></script>
+    <link href="../JS/bootstrap-5.3.8-dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="../JS/bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+    <script src="../theme/js/gsap/gsap.min.js"></script>
+    <script src="../theme/js/gsap/ScrollTrigger.min.js"></script>
+    <script src="../theme/js/gsap/Draggable.min.js"></script>
+    <link href="../css/01-style.css?v1" rel="stylesheet" />
+    <link href="../css/animation.css" rel="stylesheet" />
+    <script src="../JS/wow.min.js"></script>
+    <script src="../JS/import.js"></script>
+    <script src="../JS/script.js" defer type="module"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <div id="body-container">
+        <header class="divHeader" data-include="header.html" data-lang="en"></header>
+        <div class="divBody">
+            <div id="theme-contain-home">
+                <div class="homeBanner" data-include="banner.html" data-lang="en"></div>
+                <div class="home-intro">
+                    <div class="w1440 intro-wrapper">
+                        <div class="intro-left">
+                            <div class="intro-header wow fadeInUp">
+                                <h1>Welcome to ACE333 GAMING!</h1>
+                                <h4>A team of 65 telented individuals that delivers technical, creative, and artistic games.</h4>
+                            </div>
+                            <div class="intro-cards cards">
+                                <div class="intro-track d-flex">
+                                    <div class="intro-card card wow fadeIn" data-wow-delay="0.2s" >
+                                        <div class="img">
+                                            <img src="../image/icn-plaform.png" />
+                                        </div>
+                                        <div class="detail">
+                                            <h3>Multi-platform <br />Excellence</h3>
+                                            <p>
+                                                Our HTML5 games work seamlessly across all devices.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="intro-card card wow fadeIn" data-wow-delay="0.4s" >
+                                        <div class="img">
+                                            <img src="../image/icn-gameplay.png" />
+                                        </div>
+                                        <div class="detail">
+                                            <h3>Engaging <br />Gameplay</h3>
+                                            <p>
+                                                We build games we love, ensuring excitement and enjoyment.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="intro-card card wow fadeIn" data-wow-delay="0.6s" >
+                                        <div class="img">
+                                            <img src="../image/icn-global.png" />
+                                        </div>
+                                        <div class="detail">
+                                            <h3>Global <br />Reach</h3>
+                                            <p>
+                                                ACE333 Gaming supports multiple languages and currencies, making it accessible worldwide.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="intro-right">
+                            <div class="">
+                                <div class="marquee intro-marquee gradient-hidden" data-axis="y" data-respect-reduced-motion="true">
+                                    <div class="col col-up" data-dir="up" data-speed="30">
+                                        <ul class="list">
+                                            <li>
+                                                <img src="../image/games/5dragons.jpg" />
+                                            </li>
+                                            <li>
+                                                <img src="../image/games/diamonds.jpg" />
+                                            </li>
+                                            <li>
+                                                <img src="../image/games/fortunefox.jpg" />
+                                            </li>
+                                            <li>
+                                                <img src="../image/games/fortune lion.jpg" />
+                                            </li>
+                                            <li>
+                                                <img src="../image/games/jinqianwa.jpg" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col col-down" data-dir="down" data-speed="30">
+                                        <ul class="list">
+                                            <li>
+                                                <img src="../image/games/magicpearl.jpg" />
+                                            </li>
+                                            <li>
+                                                <img src="../image/games/nitro.jpg" />
+                                            </li>
+                                            <li>
+                                                <img src="../image/games/santasuprise.jpg" />
+                                            </li>
+                                            <li>
+                                                <img src="../image/games/thaiparadise.jpg" />
+                                            </li>
+                                            <li>
+                                                <img src="../image/games/wolfhunter.jpg" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col col-up" data-dir="up" data-speed="30">
+                                        <ul class="list">
+                                            <li>
+                                                <img src="../image/games/yingcaishen.jpg" />
+                                            </li>
+                                            <li>
+                                                <img src="../image/games/50dragons.jpg" />
+                                            </li>
+                                            <li>
+                                                <img src="../image/games/blazing777.jpg" />
+                                            </li>
+                                            <li>
+                                                <img src="../image/games/fairygarden.jpg" />
+                                            </li>
+                                            <li>
+                                                <img src="../image/games/goldentour.jpg" />
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="home-gameslist">
+                    <div class="w1440 treading-header">
+                        <h2>Treading Games</h2>
+                        <div class="treading-btns">
+                            <button class="btn btn-prev bg-gold prev" aria-label="to left">
+                                <img src="../image/arrow-left.png" />
+                            </button>
+                            <button class="btn btn-next bg-gold next" aria-label="to right">
+                                <img src="../image/arrow-right.png" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="treading-container">
+
+                        <div class="treading-wrapper">
+                            <ul class="treading-boxes" aria-hidden="true">
+                                <li class="treading-box">
+                                    <img src="../image/banner-treadingGame-3hotchillies.png" />
+                                    <div class="treading-btn">
+                                        <button class="btn-play bg-gold btn">
+                                            Play Now
+                                        </button>
+                                        <button class="btn-fav bg-black">
+                                            <img src="../image/icn-love.png" />
+                                        </button>
+                                    </div>
+                                </li>
+
+                                <li class="treading-box">
+                                    <img src="../image/banner-treadingGame-5 dragons deluxe.png" />
+                                    <div class="treading-btn">
+                                        <button class="btn-play bg-gold btn">
+                                            Play Now
+                                        </button>
+                                        <button class="btn-fav bg-black">
+                                            <img src="../image/icn-love.png" />
+                                        </button>
+                                    </div>
+                                </li>
+
+                                <li class="treading-box">
+                                    <img src="../image/banner-treadingGame-Ancient Egypt.png" />
+                                    <div class="treading-btn">
+                                        <button class="btn-play bg-gold btn">
+                                            Play Now
+                                        </button>
+                                        <button class="btn-fav bg-black">
+                                            <img src="../image/icn-love.png" />
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="treading-box">
+                                    <img src="../image/banner-treadingGame-buffalo rush.png" />
+                                    <div class="treading-btn">
+                                        <button class="btn-play bg-gold btn">
+                                            Play Now
+                                        </button>
+                                        <button class="btn-fav bg-black">
+                                            <img src="../image/icn-love.png" />
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="treading-box">
+                                    <img src="../image/banner-treadingGame-fortunelions.png" />
+                                    <div class="treading-btn">
+                                        <button class="btn-play bg-gold btn">
+                                            Play Now
+                                        </button>
+                                        <button class="btn-fav bg-black">
+                                            <img src="../image/icn-love.png" />
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="treading-box">
+                                    <img src="../image/banner-treadingGame-Pharaoh’s Temple.png" />
+                                    <div class="treading-btn">
+                                        <button class="btn-play bg-gold btn">
+                                            Play Now
+                                        </button>
+                                        <button class="btn-fav bg-black">
+                                            <img src="../image/icn-love.png" />
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="treading-box">
+                                    <img src="../image/banner-treadingGame-topGun.png" />
+                                    <div class="treading-btn">
+                                        <button class="btn-play bg-gold btn">
+                                            Play Now
+                                        </button>
+                                        <button class="btn-fav bg-black">
+                                            <img src="../image/icn-love.png" />
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="treading-box">
+                                    <img src="../image/banner-treadingGame-rally.png" />
+                                    <div class="treading-btn">
+                                        <button class="btn-play bg-gold btn">
+                                            Play Now
+                                        </button>
+                                        <button class="btn-fav bg-black">
+                                            <img src="../image/icn-love.png" />
+                                        </button>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <script>
+                            $(function () {
+                                $('.btn-fav').on('click', function () {
+                                    $(this).toggleClass('fav');
+                                });
+                            });
+                        </script>
+                    </div>
+
+                    <a href="games.html" class="bg-gold btn btn-href">All Games ></a>
+
+                </div>
+                <div class="homeinfo">
+                    <div class="homeinfo-wrapper w1440">
+                        <div class="home-special">
+                            <div class="special-header text-center">
+                                <h2>What make us special</h2>
+                            </div>
+                            <div class="special-cards cards ">
+                                <div class="special-track d-flex">
+                                    <div class="special-card card wow fadeInUp">
+                                        <div class="img">
+                                            <img src="../image/icn-magnifier.png" />
+                                        </div>
+                                        <div class="detail">
+                                            <h3>High-Quality Game</h3>
+                                            <p>
+                                                The high-quality game screen of the slot machine is the foundation to win the good experience of the playes. A variety of playing methods, high payout ratio and fairness are the most important. Creating the next masterpiece in the industry is our ultimate goal.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="special-card card wow fadeInUp" data-wow-delay="0.2s">
+                                        <div class="img">
+                                            <img src="../image/icn-gamecontroller.png" />
+                                        </div>
+                                        <div class="detail">
+                                            <h3>Popular Game</h3>
+                                            <p>
+                                                Include the popular game items from various contries, interesting gameplay and different odds, promoting players to play again and again.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="special-card card wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="img">
+                                            <img src="../image/icn-battle.png" />
+                                        </div>
+                                        <div class="detail">
+                                            <h3>Battle</h3>
+                                            <p>
+                                                Battle and plaay with global game matsters to test the luck and strength of both parties.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="special-card card wow fadeInUp" data-wow-delay="0.6s">
+                                        <div class="img">
+                                            <img src="../image/icn-customer.png" />
+                                        </div>
+                                        <div class="detail">
+                                            <h3>Support</h3>
+                                            <p>
+                                                The support offered, should you encounter any problems, will be handled by 20 of our commited professionals with requisite expertise to assist in resolving the issue.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-deepblack homeinfo-boxes">
+                        <div class="w1440">
+                            <div class="home-info">
+                                <div class="info-header text-center">
+                                    <h2>PLAY TO WIN! WIN TO THRIVE!</h2>
+                                </div>
+                                <div class="info-container">
+                                    <div class="info-parent">
+                                        <div class="info-1 info-box info-games windowOnly">
+                                            <div class="igs-left title">
+                                                <h2 class="latoheavy number"><span class="countup" data-target="50" data-suffix="+"></span></h2>
+                                                <h2>Games</h2>
+                                                <p>
+                                                    Explore More About Our Games
+                                                </p>
+                                                <a href="games.html" class="bg-gold btn">All Games ></a>
+                                            </div>
+                                            <div class="igs-right">
+                                                <div class="marquee games-marquee gradient-hidden grey" data-axis="y" data-respect-reduced-motion="true">
+                                                    <div class="col col-up" data-dir="up" data-speed="40">
+                                                        <ul class="list">
+                                                            <li>
+                                                                <img src="../image/games/Emperor Gate.jpg" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/games/fortunefox.jpg" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/games/buffalo rush.jpg" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/games/88rooster.jpg" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/games/happylantern.jpg" />
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col col-down" data-dir="down" data-speed="40">
+                                                        <ul class="list">
+                                                            <li>
+                                                                <img src="../image/games/greatchina.jpg" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/games/joyful mahjong.jpg" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/games/magicalspin.jpg" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/games/niannianyouyu.jpg" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/games/saharagold.jpg" />
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col col-up" data-dir="up" data-speed="40">
+                                                        <ul class="list">
+                                                            <li>
+                                                                <img src="../image/games/stoneage.jpg" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/games/5dragons.jpg" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/games/tripletwister.jpg" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/games/wongchoy.jpg" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/games/zhaocaitongzi.jpg" />
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col col-down" data-dir="down" data-speed="40">
+                                                        <ul class="list">
+                                                            <li>
+                                                                <img src="../image/games/Pharaoh’s Temple.jpg" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/games/5koi.jpg" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/games/elektra.jpg" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/games/bonusdigger.jpg" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/games/blazing777.jpg" />
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="info-2 info-box info-currencies windowOnly">
+                                            <div class="ics-top title">
+                                                <h3>Supported <br />Currencies</h3>
+                                            </div>
+                                            <div class="ics-bottom">
+                                                <div class="marquee info-marquee gradient-hidden grey" data-axis="y" data-respect-reduced-motion="true">
+                                                    <div class="col col-up" data-dir="up" data-speed="40">
+                                                        <ul class="list">
+                                                            <li>
+                                                                <img src="../image/flag-malaysia.png" />
+                                                                Malaysia
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/flag-vietnam.png" />
+                                                                Vietnam
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/flag-bangladesh.png" />
+                                                                Bangladesh
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/flag-china.png" />
+                                                                China
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col col-down" data-dir="down" data-speed="40">
+                                                        <ul class="list">
+                                                            <li>
+                                                                <img src="../image/flag-indonesia.png" />
+                                                                Indonesia
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/flag-singapore.png" />
+                                                                Singapore
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/flag-combodia.png" />
+                                                                Cambodia
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/flag-autralian.png" />
+                                                                Australian
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col col-up" data-dir="up" data-speed="40">
+                                                        <ul class="list">
+                                                            <li>
+                                                                <img src="../image/flag-thailand.png" />
+                                                                Thailand
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/flag-usa.png" />
+                                                                U.S.A
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/flag-hongkong.png" />
+                                                                Hong Kong
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/flag-myanmar.png" />
+                                                                Myanmar
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="info-3 info-box info-language windowOnly">
+                                            <div class="ics-top title">
+                                                <h3>Supported <br />Language</h3>
+                                            </div>
+                                            <div class="ics-bottom">
+                                                <div class="marquee info-marquee gradient-hidden grey horizontal" data-axis="x" data-respect-reduced-motion="true">
+                                                    <div class="col col-left" data-dir="left" data-speed="40">
+                                                        <ul class="list">
+                                                            <li>
+                                                                <img src="../image/lang-cn.png" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/lang-en.png" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/lang-id.png" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/lang-vt.png" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/lang-th.png" />
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col col-right" data-dir="right" data-speed="40">
+                                                        <ul class="list">
+                                                            <li>
+                                                                <img src="../image/lang-th.png" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/lang-vt.png" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/lang-id.png" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/lang-en.png" />
+                                                            </li>
+                                                            <li>
+                                                                <img src="../image/lang-cn.png" />
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="info-5 info-box info-video">
+                                            <div class="video-wrapper">
+                                                <div class="video-slider">
+                                                    <div class="video-track">
+
+                                                        <div class="video-container vertical">
+                                                            <video controls="controls">
+                                                                <source src="../image/video/0bde9186096a8de2c19780b45bfdff4f.mp4" type="video/mp4" />
+                                                            </video>
+                                                        </div>
+                                                        <div class="video-container vertical">
+                                                            <video controls="controls">
+                                                                <source src="../image/video/1c5c0b1e22e92df675ffe096ca7c9fa6.mp4" type="video/mp4" />
+                                                            </video>
+                                                        </div>
+                                                        <div class="video-container vertical">
+                                                            <video controls="controls">
+                                                                <source src="../image/video/2d977a752a4b59c2c7d8f0aa75d731b1.mp4" type="video/mp4" />
+                                                            </video>
+                                                        </div>
+                                                        <div class="video-container vertical">
+                                                            <video controls="controls">
+                                                                <source src="../image/video/9416887f2740b04c7a1a1212242f0996.mp4" type="video/mp4" />
+                                                            </video>
+                                                        </div>
+                                                        <div class="video-container vertical">
+                                                            <video controls="controls">
+                                                                <source src="../image/video/a64da15962580f33678f3d63769be69c.mp4" type="video/mp4" />
+                                                            </video>
+                                                        </div>
+                                                        <div class="video-container vertical">
+                                                            <video controls="controls">
+                                                                <source src="../image/video/c6c4092430e0ff215c254bb9e7d68329.mp4" type="video/mp4" />
+                                                            </video>
+                                                        </div>
+                                                        <div class="video-container vertical">
+                                                            <video controls="controls">
+                                                                <source src="../image/video/WeChat_20250903093808.mp4" type="video/mp4" />
+                                                            </video>
+                                                        </div>
+                                                        <div class="video-container vertical">
+                                                            <video controls="controls">
+                                                                <source src="../image/video/WeChat_20250903093817.mp4" type="video/mp4" />
+                                                            </video>
+                                                        </div>
+                                                        <div class="video-container vertical">
+                                                            <video controls="controls">
+                                                                <source src="../image/video/WeChat_20250903093832.mp4" type="video/mp4" />
+                                                            </video>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+                                                <button class="video-prev btn bg-gold prev btn-round">
+                                                    <img src="../image/arrow-left.png">
+                                                </button>
+                                                <button class="video-next btn bg-gold next btn-round">
+                                                    <img src="../image/arrow-right.png">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="home-jackpot">
+                    <div class="w1440 pd">
+                        <div class="jackpot-header text-center">
+                            <h2>Every Spin is a Win!</h2>
+                            <p>
+                                Pushing boundaries regularly and being one of the leading and most dedicated developers in the international IGaming industry.
+                            </p>
+                        </div>
+                        <div class="trio">
+                            <div class="jackpot-container trio-track">
+                                <div class="jackpot-boxes trio-card wow flipInX center">
+                                    <div class="jackpot-title">
+                                        <img src="../image/jackpot-mega.png" />
+                                    </div>
+                                    <div class="jackpot-box">
+                                        <div class="jackpot-a_s">
+                                            <img src="../image/jackpot-speaker.png" />
+                                        </div>
+                                        <div class="jackpot-count displaytable marginauto">
+                                            <span id="jackpotmega"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jackpot-boxes trio-card wow flipInX center" data-wow-delay="0.2s">
+                                    <div class="jackpot-title">
+                                        <img src="../image/jackpot-grand.png" />
+                                    </div>
+                                    <div class="jackpot-box">
+                                        <div class="jackpot-a_s">
+                                            <img src="../image/jackpot-speaker.png" />
+                                        </div>
+                                        <div class="jackpot-count displaytable marginauto">
+                                            <span id="jackpotgrand"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jackpot-boxes trio-card wow flipInX center" data-wow-delay="0.4s">
+                                        <div class="jackpot-title">
+                                            <img src="../image/jackpot-ultimate.png" />
+                                        </div>
+                                        <div class="jackpot-box">
+                                            <div class="jackpot-a_s">
+                                                <img src="../image/jackpot-speaker.png" />
+                                            </div>
+                                            <div class="jackpot-count displaytable marginauto">
+                                                <span id="jackpotulti"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <button class="trio-prev prev btn bg-gold btn-round">
+                                    <img src="../image/arrow-left.png">
+                                </button>
+                                <button class="trio-next next btn bg-gold btn-round">
+                                    <img src="../image/arrow-right.png">
+                                </button>
+                            </div>
+                        <div>
+                            <a href="download.html" class="bg-gold btn btn-href d-block">Hit the jackpot now! ></a>
+                        </div>
+                        <script src="../JS/jackpot.js"></script>
+                    </div>
+                </div>
+                <div class="download-section bg-deepblack">
+                    <div class="w1440">
+                        <div class="download-box">
+                            <div class="downlaod-images download-boxes">
+                                <img src="../image/spin-bg.png" class="spin-bg " />
+                                <img src="../image/spin-0.png" class="spin-0" />
+                                <img src="../image/spin-1.png" class="spin-1" />
+                                <img src="../image/spin-2.png" class="spin-2" />
+                                <img src="../image/spin-3.png" class="spin-3" />
+                            </div>
+                            <div class="download-boxes" data-include="download-link.html" data-lang="en"></div>
+                            <div class="windowOnly download-boxes">
+                                <div>
+                                    <img src="../image/ACE333-logo.png" class="downlaod-logo" />
+                                    <h4>Download Our<br /> ACE333 Game App</h4>
+                                    <a href="#" class="header-download-img">
+                                        <img src="../image/download-ios.png" />
+                                    </a>
+                                    <a href="#" class="header-download-img">
+                                        <img src="../image/download-android.png" />
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-section" id="contactus">
+                    <div class="w1440">
+                        <div class="contact-header">
+                            <h2>Happy to see you here</h2>
+                            <p>If you are interested in our products, please leave your message, we will contact you as soon as possible!</p>
+                        </div>
+                        <div class="contact-container">
+                            <div class="contact-form">
+                                <form id="formContact" action="@" method="post" enctype="text/plain">
+                                    <label for="name" class="small">Name:</label>
+                                    <input type="text" name="user_name" placeholder="Your Name" required>
+
+                                    <label for="email" class="small">Email:</label>
+                                    <input type="email" name="user_email" placeholder="Your Email" required>
+
+
+                                    <label for="message" class="small">Message:</label>
+                                    <textarea id="message" name="user_message" rows="3" cols="40" placeholder="Type your message here." required></textarea>
+
+                                    <input type="submit" value="Submit" class="btn bg-gold">
+                                </form>
+                            </div>
+                            <div class="contact-detail">
+                                <ul>
+                                    <li>
+                                        <img src="../image/img-qr-test.png" class="img-qr" />
+                                    </li>
+                                    <li>
+                                        <img src="../image/icn-telegram-2.png" class="img-icn" />
+                                        ace333-gaming
+                                    </li>
+
+                                    <li>
+                                        <img src="../image/icn-mail-2.png" class="img-icn" />
+                                        enquiry@ace333gaming.com
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contact-right">
+                                <p class="small">Supported Currencies</p>
+                                <div class="currencies-list">
+                                    <ul class="list">
+                                        <li>
+                                            <img src="../image/flag-malaysia.png" />
+                                            Malaysia
+                                        </li>
+                                        <li>
+                                            <img src="../image/flag-vietnam.png" />
+                                            Vietnam
+                                        </li>
+                                        <li>
+                                            <img src="../image/flag-bangladesh.png" />
+                                            Bangladesh
+                                        </li>
+                                        <li>
+                                            <img src="../image/flag-china.png" />
+                                            China
+                                        </li>
+                                        <li>
+                                            <img src="../image/flag-indonesia.png" />
+                                            Indonesia
+                                        </li>
+                                        <li>
+                                            <img src="../image/flag-singapore.png" />
+                                            Singapore
+                                        </li>
+                                        <li>
+                                            <img src="../image/flag-combodia.png" />
+                                            Cambodia
+                                        </li>
+                                        <li>
+                                            <img src="../image/flag-autralian.png" />
+                                            Australian
+                                        </li>
+                                        <li>
+                                            <img src="../image/flag-thailand.png" />
+                                            Thailand
+                                        </li>
+                                        <li>
+                                            <img src="../image/flag-usa.png" />
+                                            U.S.A
+                                        </li>
+                                        <li>
+                                            <img src="../image/flag-hongkong.png" />
+                                            Hong Kong
+                                        </li>
+                                        <li>
+                                            <img src="../image/flag-myanmar.png" />
+                                            Myanmar
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="../JS/script-home.js"></script>
+            </div>
+        </div>
+    </div>
+
+    <div class="divFooter">
+        <div class="footer-container" data-include="footer.html" data-lang="en"></div>
+    </div>
+
+</body>
+</html>

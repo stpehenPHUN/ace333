@@ -1,0 +1,98 @@
+﻿<div class="header-wrapper">
+    <div class="header-left">
+        <img src="../image/ace333-logo.gif" class="logo-img" />
+    </div>
+    <div class="header-right">
+        <div class="header-rightop">
+            <div class="header-appdownload">
+                <div class="downloads" data-include="download-link.html" data-lang="en"></div>
+            </div>
+            <div>
+                <button class="navbar-toggler btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#divMenu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+        </div>
+        <div class="header-rightbottom">
+            <div class="header-menu">
+                <div id='divMenu' class='collapse  navbar-collapse' aria-hidden='true'>
+                    <div id='menuContainer'>
+                        <div id="cssmenu" class="cmsmenu">
+                            <ul>
+                                <li class="">
+                                    <a href="home.html">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="games.html">
+                                        Games
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="download.html">
+                                        Download
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="guide.html">
+                                        Guide
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="rules.html">
+                                        Rules
+                                    </a>
+                                </li>
+                                <li class="menunon">
+                                    <a href="home.html#contactus" target="_self">
+                                        Contact Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="language">
+                        <div class="selected_language pill windowOnly">
+                            <img src="../image/icn-language.png" />
+                            <span>EN</span>
+                        </div>
+                        <div class="mobileOnly small">
+                            Select language:
+                        </div>
+                        <div class="language_dropdown dropdown col" data-include="language.html" data-lang="en">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        var path = window.location.pathname.split("/").pop();
+        if (path === "" || path === "/") {
+            path = "home.html";
+        }
+        var baseName = path.split('.')[0]; 
+        baseName = baseName.split(/[-_]/)[0]; 
+
+        $("#cssmenu ul li a").each(function () {
+            var $this = $(this);
+            var href = $this.attr("href");
+            if (!href) return;
+
+            var menuBase = href.split('.')[0];
+            menuBase = menuBase.split(/[-_]/)[0];
+
+            if (baseName === menuBase) {
+                $this.parent("li").addClass("active");
+            }
+        });
+    });
+</script>
