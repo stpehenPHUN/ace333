@@ -1,0 +1,19 @@
+﻿:root { --size: 140px; --gap: 8px; --cluster-span: calc(var(--size) * 2 + var(--gap)); }
+
+#box { position: relative; display: grid; place-items: center; perspective: 900px; overflow: visible; aspect-ratio: 1 / 1; transform: scale(0.8); }
+
+.cluster { position: absolute; left: 50%; top: 50%; width: var(--cluster-span); height: var(--cluster-span); transform: translate(-50%, -50%); transform-style: preserve-3d; transform-origin: 50% 50% 0; }
+
+.cube { position: absolute; left: 50%; top: 50%; width: var(--size); height: var(--size); transform: translate(-50%, -50%); transform-style: preserve-3d; }
+    .cube img { width: 100%; }
+.face { position: absolute; inset: 0; display: grid; place-items: center; background: #1f1f1f; border: 1px solid rgba(0,0,0,.5); color: #fff; backface-visibility: hidden; }
+.front { transform: translateZ(calc(var(--size) / 2)); }
+.back { transform: rotateY(180deg) translateZ(calc(var(--size) / 2)); }
+.left { transform: rotateY(-90deg) translateZ(calc(var(--size) / 2)); }
+.right { transform: rotateY( 90deg) translateZ(calc(var(--size) / 2)); }
+.top { transform: rotateX( 90deg) translateZ(calc(var(--size) / 2)); }
+.bottom { transform: rotateX(-90deg) translateZ(calc(var(--size) / 2)); }
+
+@media (min-width:768px) {
+    #box { transform: scale(1); }
+}
